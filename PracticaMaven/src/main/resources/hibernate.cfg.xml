@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/practicamaven</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <mapping resource="Autor.hbm.xml"/>
+        <mapping resource="Contactousuario.hbm.xml"/>
+        <mapping resource="Ejemplar.hbm.xml"/>
+        <mapping resource="Libro.hbm.xml"/>
+        <mapping resource="Prestamo.hbm.xml"/>
+        <mapping resource="Usuario.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
